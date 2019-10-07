@@ -1,0 +1,12 @@
+{% extends 'afterloginBase.html' %}
+
+{% block header %}
+    NSMhub
+    <br>
+    <br>
+{% endblock %}
+
+{% block para %}
+    <h4>Hello, {{ user.first_name }} {{ user.last_name }}</h4>
+    <h5>Nice to see you again!</h5>
+{% endblock %}

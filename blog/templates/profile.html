@@ -1,0 +1,31 @@
+{% extends 'afterloginBase.html' %}
+
+{% block header %}
+    All Post
+{% endblock %}
+
+{% block post %}
+
+    {% for q in qs %}
+        {#        {{ q.user }}#}
+        {#        {{ user.username }}#}
+
+        {% if q.user == user.username or q.user == 'admin'%}
+            <div>
+                <br>
+                <h3>{{ q.title }}</h3>
+                <h6>{{ q.time }}</h6>
+            </div>
+            <div style="background-color: #e3dfc8; color: black; font-family: InputMono Medium; ">
+                <h5 style="margin: 10px; padding-bottom: 50px;">{{ q.post }}</h5>
+            </div>
+        {% endif %}
+    {% endfor%}
+
+{#    {% if name == 0 %}#}
+{#        <br>#}
+{#        <br>#}
+{#        <h3>You didn't post anything yet! </h3>#}
+{#        <h5>Wanna create a post! Click <a href="../create">here!</a></h5>#}
+{#    {% endif %}#}
+{% endblock %}

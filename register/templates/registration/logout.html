@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    See you soon, bitch!
+{% endblock %}
+
+{% block para %}
+    <p>Click <a href="../login/">here</a> to login.</p>
+{% endblock %}
+
+{#{% extends 'base.html' %}#}
+{#{% load crispy_forms_tags %}#}
+{#{% block header %}#}
+{#Sign in to NSMhub!#}
+{#{% endblock %}#}
+{##}
+{#{% block register %}#}
+{#    {% if user.is_authenticated %}#}
+{#        <p>Already logged in. Click <a href="">here</a> to go homepage!</p>#}
+{#    {% else %}#}
+{#    <form method="post" class="empty-form">#}
+{#        {% csrf_token %}#}
+{#        {{ form|crispy }}#}
+{#        <button type="submit" class="btn btn-danger">Sign in</button>#}
+{#        <p style="padding-top: 10px;">Don't have an account? Create one <a href="/register">Here</a>!</p>#}
+{#    </form>#}
+{#    {% endif %}#}
+{#{% endblock %}#}

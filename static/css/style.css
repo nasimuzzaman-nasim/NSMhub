@@ -1,0 +1,51 @@
+body {
+    font-family: "InputMono Medium";
+}
+h1 {
+    font-family: "Ubuntu Mono";
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+body {
+    background-color: #200765;
+    color: #fff;
+}
+
+a {
+    color: deeppink;
+    font-weight: bold;
+}
+a:hover {
+    color: white;
+}
+
+
+
+/*--------------------------------------------side nav----------------------------------------------*/
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: cornsilk;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #000000;
+}

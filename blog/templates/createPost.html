@@ -1,0 +1,14 @@
+{% extends 'afterloginBase.html' %}
+{% load crispy_forms_tags %}
+
+{% block header %}
+    Create a Post
+{% endblock %}
+
+{% block post %}
+    <form action="." method="post" >
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" value="store" class="btn btn-danger">Post it</button>
+    </form>
+{% endblock %}
