@@ -5,6 +5,8 @@ from .models import Blog
 
 
 def null_view(response):
+    if not response.user.is_authenticated:
+        return redirect('login/')
     return render(response, 'null.html', {})
 
 
@@ -13,7 +15,8 @@ def base_view(response):
 
 
 def home(response):
-    # if user
+    if not response.user.is_authenticated:
+        return redirect('../login/')
     return render(response, 'home.html', {})
 
 
