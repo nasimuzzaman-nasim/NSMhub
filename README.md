@@ -1,4 +1,4 @@
 # NSMhub
 Share personal posts.
 
-#### I do it for myself
+#### I did it for myself
